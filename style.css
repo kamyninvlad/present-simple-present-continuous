@@ -1,0 +1,130 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: 'Metropolis', sans-serif;
+  background-color: #dfe6e9;
+  width: 100%;
+  height: 100%;
+}
+body .bold,
+body .italic {
+  font-weight: 700;
+}
+body .italic {
+  font-style: italic;
+}
+body #wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body table {
+  margin: 0 auto;
+}
+body table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+body table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+body table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+body table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+body table td {
+  border-right: 1px dashed #808080;
+  border-collapse: collapse;
+  padding: 20px;
+}
+body table td:last-child {
+  border-right: none;
+}
+body table tr.header>th {
+  height: 40px;
+  font-size: 16px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 800;
+  background-color: #fff;
+}
+body table tr.cards>td {
+  text-align: center;
+  padding-top: 0px !important;
+  background-color: #fff;
+  vertical-align: middle;
+}
+body table tr.cards>td div.card {
+  height: 250px;
+  width: 226px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: background-color 1s;
+}
+body table tr.cards>td div.card .card-title,
+body table tr.cards>td div.card .card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body table tr.cards>td div.card .card-title {
+  height: 45px;
+}
+body table tr.cards>td div.card .card-icon {
+  height: 150px;
+  font-family: Apple Color Emoji;
+  font-size: 100px;
+}
+body table tr.cards>td div.card:hover {
+  background-color: #dfe6e9;
+}
+body table tr.list>td {
+  background-color: #2a2a2a;
+}
+body table tr.list>td p.uses {
+  background-color: #fff;
+  height: auto;
+  width: 186px;
+  border: 2px solid #fff;
+  text-wrap: wrap;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  transition: background-color 1s, color 1s, border-color 1s;
+}
+body table tr.list>td p.uses:hover {
+  background-color: #636e72;
+  border: 2px solid #b2bec3;
+  color: #fff;
+}
+body table p.exception {
+  height: auto;
+  width: 186px;
+  text-wrap: wrap;
+  border: 2px solid #ffca00 !important;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background: repeating-linear-gradient(-55deg, #ffca00, #ffca00 15px, #ffd94b 15px, #ffd94b 30px);
+  color: #000;
+}
+body table p.exception .exception-title {
+  font-weight: 800;
+}
+body table td:nth-child(2) {
+  padding-right: 0px;
+  border-right: none;
+}
+body table tr.list>td>p:last-child {
+  margin-bottom: 0px;
+}
